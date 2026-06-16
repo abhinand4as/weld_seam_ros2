@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# ROS2 / colcon (build artifacts live one level up in the workspace,
+# but ignore them here too in case this package is ever built in place)
+build/
+install/
+log/
+
+# Editors
+.vscode/
+*.swp
+
+# OS
+.DS_Store
