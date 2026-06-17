@@ -142,6 +142,8 @@ Designed specifically for lap joints. Exploits the bimodal Z distribution (two f
 | `process_interval` | `5.0` s | Minimum seconds between successive detections |
 | `verbose` | `false` | Log per-step point counts for parameter tuning |
 
+![Lap-joint seam detection result in RViz2](docs/lap_joint_seam_detected_rviz.png)
+
 #### Tuning guide
 
 ```text
