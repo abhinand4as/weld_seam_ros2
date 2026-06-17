@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""Launch the scene publisher together with RViz2, preconfigured to show
-the table, the lap-joint mesh and the overlapping point cloud."""
+"""Launch the scene publisher and RViz2.
+
+Publishes the static weld scene (table mesh, lap-joint mesh, point cloud)
+and opens RViz2 with the preconfigured display layout.  Run the seam
+detector separately via detector.launch.py.
+"""
 import os
 
 from ament_index_python.packages import get_package_share_directory

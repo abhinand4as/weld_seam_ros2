@@ -26,7 +26,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'scene_publisher = weld_seam_ros2.scene_publisher_node:main',
+            'scene_publisher        = weld_seam_ros2.scene_publisher_node:main',
+            'seam_detector          = weld_seam_ros2.seam_detector_node:main',
+            'lap_joint_seam_detector = weld_seam_ros2.lap_joint_seam_detector_node:main',
         ],
     },
 )

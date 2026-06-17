@@ -41,7 +41,7 @@ class ScenePublisher(Node):
 
         share_dir = get_package_share_directory('weld_seam_ros2')
         default_mesh = os.path.join(share_dir, 'assets', 'lap_joint_test.stl')
-        default_pcd = os.path.join(share_dir, 'assets', 'lap_joint_base_frame.pcd')
+        default_pcd = os.path.join(share_dir, 'assets', 'lap_joint_test.pcd')
 
         self.declare_parameter('frame_id', 'world')
         self.declare_parameter('mesh_path', default_mesh)

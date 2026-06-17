@@ -37,9 +37,9 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: /scene/markers
 
-    - Alpha: 0.9
+    - Alpha: 0.5
       Class: rviz_default_plugins/PointCloud2
-      Color: 220; 60; 60
+      Color: 160; 160; 160
       Color Transformer: FlatColor
       Enabled: true
       Name: Part point cloud
@@ -51,6 +51,80 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /scene/points
+
+    - Alpha: 0.6
+      Class: rviz_default_plugins/PointCloud2
+      Color: 100; 160; 220
+      Color Transformer: FlatColor
+      Enabled: true
+      Name: Downsampled cloud
+      Size (m): 0.003
+      Style: Points
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /seam/downsampled_cloud
+
+    - Alpha: 1.0
+      Class: rviz_default_plugins/PointCloud2
+      Color: 220; 50; 50
+      Color Transformer: FlatColor
+      Enabled: true
+      Name: Detected groove
+      Size (m): 0.006
+      Style: Spheres
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /seam/groove_cloud
+
+    - Alpha: 1.0
+      Class: rviz_default_plugins/PointCloud2
+      Color: 50; 220; 50
+      Color Transformer: FlatColor
+      Enabled: true
+      Name: Trajectory cloud
+      Size (m): 0.004
+      Style: Spheres
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /seam/trajectory_cloud
+
+    - Class: rviz_default_plugins/PoseArray
+      Enabled: true
+      Name: Seam poses
+      Shape:
+        Arrow Length: 0.02
+        Axes Length: 0.02
+        Axes Radius: 0.002
+        Head Length: 0.005
+        Head Radius: 0.003
+        Shaft Length: 0.015
+        Shaft Radius: 0.002
+        Value: Axes
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /seam/trajectory_poses
+
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Seam markers
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /seam/markers
 
   Enabled: true
   Global Options:
